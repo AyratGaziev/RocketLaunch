@@ -1,0 +1,124 @@
+/* rocket */
+.rocket {
+    width: 900px;
+    margin: 0 auto;
+}
+
+#start-top {
+    cursor: pointer;
+}
+.start-top_click {
+    animation: push-btn 800ms linear forwards;
+}
+@keyframes push-btn {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(12px);
+    }
+}
+.rocket_animate {
+    animation: rocket 5s linear forwards;
+}
+@keyframes rocket {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-800px);
+    }
+}
+.fire-line_animate {
+    animation: rocket 5s linear forwards;
+}
+.bottom-smoke_animate {
+    transform-origin: bottom;
+    animation: bottom-smoke 1s linear infinite;
+}
+@keyframes bottom-smoke {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.middle-smoke_animate {
+    transform-origin: center;
+    animation: middle-smoke 1s 100ms linear infinite;
+}
+@keyframes middle-smoke {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.fire_animate {
+    transform-origin: center;
+    animation: fire 100ms linear infinite;
+}
+@keyframes fire {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-2px);
+    }
+    75% {
+        transform: translateX(2px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+#radial-bg {
+    transform-origin: center;
+    animation: radial-bg 4s linear infinite;
+}
+@keyframes radial-bg {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.destroy {
+    transform-origin: bottom;
+    animation: destroy 2s linear forwards;
+}
+@keyframes destroy {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+.fire-line_destroy {
+    animation: fire-line_destroy 500ms linear forwards;
+}
+@keyframes fire-line_destroy {
+    from {
+        transform: translateY(-800px);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-800px);
+        opacity: 0;
+    }
+}
