@@ -1,9 +1,12 @@
 /* rocket */
 .rocket {
-    width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
 }
-
+* {
+    padding: 0;
+    margin: 0;
+}
 #start-top {
     cursor: pointer;
 }
