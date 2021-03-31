@@ -1,4 +1,7 @@
 /* rocket */
+body {
+    background-color: #caf0f8;
+}
 .rocket {
     max-width: 950px;
     margin: 0 auto;
@@ -124,4 +127,33 @@
         transform: translateY(-800px);
         opacity: 0;
     }
+}
+.links {
+    display: flex;
+    justify-content: center;
+    margin: 5px auto;
+}
+.links-mail {
+    display: block;
+    background-image: url(./gmail.svg);
+    background-size: 30px 30px;
+    margin: 0 15px;
+    width: 30px;
+    height: 30px;
+}
+.links-telegram {
+    display: block;
+    background-image: url(./telegram.svg);
+    background-size: 30px 30px;
+    margin: 0 15px;
+    width: 30px;
+    height: 30px;
+}
+.links-github {
+    display: block;
+    background-image: url(./github.svg);
+    background-size: 30px 30px;
+    margin: 0 15px;
+    width: 30px;
+    height: 30px;
 }
